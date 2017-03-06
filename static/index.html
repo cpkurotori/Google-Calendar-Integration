@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Schedule Updater</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<form action="/main" method="post">
+			Course: <input type="text" id="course" name="course" /><br>
+			Section: <input type="text" id="section" name="section" /><br>
+			Description: <input type="text" id="description" name="description"/><br>
+			Days: 
+			<ul>
+				<li><input type="checkbox" name="MO" value="MO"> Monday<br></li>
+				<li><input type="checkbox" name="TU" value="TU"> Tueday<br></li>
+				<li><input type="checkbox" name="WE" value="WE"> Wednesday<br></li>
+				<li><input type="checkbox" name="TH" value="TH"> Thursday<br></li>
+				<li><input type="checkbox" name="FR" value="FR"> Friday<br></li>
+				<li><input type="checkbox" name="SA" value="SA"> Saturday<br></li>
+			</ul>
+			Start Time: <input type="time" name="startt"><br>
+			End Time: <input type="time" name="endt"><br>
+			Start Date: <input type="date" name="startd"><br>
+			End Date: <input type="date" name="endd"><br>
+			Notes: <input type="text" name="notes"><br>
+			<input type="submit" name="submit">
+		</form>
+	</body>
+</html>
