@@ -79,6 +79,7 @@ def main():
 	service = discovery.build('calendar', 'v3', http=http)
 	page_token = None
 	dupCalFound = False
+	calendarid=""
 	while True:
 		calendar_list = service.calendarList().list(pageToken=page_token).execute()
 		for calendar_list_entry in calendar_list['items']:
